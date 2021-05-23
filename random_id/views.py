@@ -20,7 +20,6 @@ class RandomUUID(APIView):
         date_time = RandomId.objects.values_list(
             "time_created", "random_uuid"
         ).order_by("-time_created")
-        print(random_id.hex)
         return Response(
             dict(date_time)
         )
