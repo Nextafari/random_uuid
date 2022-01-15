@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     path(
-        "random_id",
+        "random-id",
         views.RandomUUID.as_view(),
         name="random_id"
     )
